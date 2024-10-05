@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 import "./hero.scss";
 
-import heroData from "./hero-data.json";
+import { heroData } from "./hero-data";
 
 import arrowIcon from "../../images/icon-arrow.svg";
 import prevBtn from "../../images/icon-angle-left.svg";
@@ -53,7 +53,7 @@ function index() {
 				{heroData.map((data, index) => (
 					<div className="slide" key={index}>
 						<picture>
-							<source media="(min-width:1440px)" srcSet={data.img.desktop} />
+							<source media="(min-width: 1440px)" srcSet={data.img.desktop} />
 							<img src={data.img.mobile} />
 						</picture>
 
