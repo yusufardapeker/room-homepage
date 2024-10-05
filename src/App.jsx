@@ -1,10 +1,12 @@
 import "./styles/reset.css";
 import "./styles/main.scss";
 
+import Hero from "./components/Hero";
+
 function App() {
 	return (
 		<>
-			<h1>Hello</h1>
+			<Hero />
 		</>
 	);
 }

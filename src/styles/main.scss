@@ -12,3 +12,13 @@ body {
 	font-family: "League Spartan", sans-serif;
 	font-size: 12px;
 }
+
+p {
+	font-weight: $fw-m;
+	color: $dark-gray;
+	line-height: 1.5;
+}
+
+.shop-now-btn {
+	margin-top: 28px;
+}
