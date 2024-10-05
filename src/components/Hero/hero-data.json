@@ -1,8 +1,8 @@
 [
 	{
 		"img": {
-			"mobile": "/src/images/mobile-image-hero-1.jpg",
-			"desktop": "/src/images/desktop-image-hero-1.jpg"
+			"mobile": "src/images/mobile-image-hero-1.jpg",
+			"desktop": "src/images/desktop-image-hero-1.jpg"
 		},
 
 		"text": {
@@ -12,8 +12,8 @@
 	},
 	{
 		"img": {
-			"mobile": "/src/images/mobile-image-hero-2.jpg",
-			"desktop": "/src/images/desktop-image-hero-2.jpg"
+			"mobile": "src/images/mobile-image-hero-2.jpg",
+			"desktop": "src/images/desktop-image-hero-2.jpg"
 		},
 
 		"text": {
