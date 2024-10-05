@@ -1,0 +1,97 @@
+@import "../../styles/main.scss";
+
+header {
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 80px;
+	padding: 0px 20px;
+
+	.logo {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.desktop-nav {
+		display: none;
+	}
+
+	.mobile-nav {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		height: 80px;
+		padding: 0px 24px;
+		background-color: $white;
+		color: $black;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.mobile-links {
+			display: flex;
+			gap: 24px;
+			font-size: 16px;
+			font-weight: $fw-xl;
+
+			a {
+				animation: animateLinks 800ms ease;
+			}
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		top: 80px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: calc(100vh - 80px);
+		background-color: $black-500;
+	}
+}
+
+@keyframes animateLinks {
+	0% {
+		transform: rotate(30deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@media (min-width: 376px) {
+	header {
+		padding: unset;
+		left: 60px;
+		height: 120px;
+
+		.hamburger-icon {
+			display: none;
+		}
+
+		.logo {
+			left: 0;
+			transform: unset;
+		}
+
+		.desktop-nav {
+			display: block;
+			margin-left: 124px;
+			font-size: 18px;
+
+			.desktop-links {
+				display: flex;
+				gap: 36px;
+				color: $white;
+			}
+		}
+	}
+}

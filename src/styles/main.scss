@@ -1,6 +1,7 @@
 // Colors
 $dark-gray: hsl(0, 0%, 63%);
 $black: hsl(0, 0%, 0%);
+$black-500: hsla(0, 0%, 0%, 0.5);
 $white: hsl(0, 0%, 100%);
 $very-dark-gray: hsl(0, 0%, 27%);
 
@@ -11,6 +12,7 @@ $fw-xl: 700;
 body {
 	font-family: "League Spartan", sans-serif;
 	font-size: 12px;
+	position: relative;
 }
 
 p {
