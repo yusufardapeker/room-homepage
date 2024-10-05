@@ -1,0 +1,46 @@
+@import "../../styles/main.scss";
+
+.about {
+	display: grid;
+
+	.about-text-content-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 270px;
+
+		.about-text-content {
+			width: 300px;
+
+			.about-title {
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 6px;
+				margin-bottom: 16px;
+			}
+		}
+	}
+}
+
+@media (min-width: 376px) {
+	.about {
+		grid-auto-flow: column;
+
+		.about-text-content-wrapper {
+			width: 580px;
+
+			.about-text-content {
+				width: 72ch;
+
+				.about-title {
+					font-size: 18px;
+				}
+
+				.about-description {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
