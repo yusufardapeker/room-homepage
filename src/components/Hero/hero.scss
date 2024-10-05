@@ -31,6 +31,20 @@
 						display: flex;
 						align-items: center;
 						gap: 20px;
+						cursor: pointer;
+						transition: all 400ms;
+
+						.arrow-icon {
+							transition: all 400ms;
+						}
+
+						&:hover {
+							color: $dark-gray;
+						}
+
+						&:hover .arrow-icon {
+							transform: translateX(10px);
+						}
 
 						.btn-text {
 							text-transform: uppercase;
@@ -50,6 +64,11 @@
 				[class*="btn"] {
 					background-color: $black;
 					padding: 16px 24px;
+					transition: all 400ms;
+
+					&:hover {
+						background-color: $very-dark-gray;
+					}
 
 					img {
 						width: 10px;
